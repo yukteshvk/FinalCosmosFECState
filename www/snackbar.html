@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+		<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width = device-width, initial-scale = 1">
+		<title> Cosmos Home </title>
+
+				<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+				<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400" rel="stylesheet">
+				<!-- Latest compiled and minified CSS -->
+				<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+				<!-- Optional theme -->
+				<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+				<link rel="stylesheet" href="css/stylesheet.css" text="text/css">
+				<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+
+				<style>
+
+
+
+				</style>
+
+
+		</head>
+	<body>
+
+	<div id= "navbar" class="container col-xs-12">
+		<div class="row">
+			<div class=" col-md-2 hidden-xs hidden-sm linkdivs">
+			<div class= "hover_div"><a href="attractions.html"> Attractions</a></div>
+			</div>
+			<div class="col-md-2 hidden-xs hidden-sm linkdivs ">
+			<div class= "hover_div"><a href="snackbar.html"> Snackbar</a></div>
+			</div>
+			<div class=" col-md-4 col-xs-6 " id="logocontainer">
+			<a href="index.html"><img src="img/CosmosFecLogo.svg" alt= "logo" style = "height: 100%" class = "centerlogo"></img></a>
+			</div>
+			<div class=" col-md-2 hidden-xs hidden-sm linkdivs">
+			<div class= "hover_div"><a href="">Reservations</a></div>
+			</div>
+			<div class=" col-md-2 hidden-xs hidden-sm linkdivs">
+			<div class= "hover_div"><a href="contactus.html">Contact Us</a></div>
+			</div>
+			<div class= "col-xs-6  Toggle">
+			<div id= "menuIcon"><span class="glyphicon glyphicon-menu-hamburger"></span></div>
+			</div>
+		</div>
+
+		<div id= "myDIV" class= "row hidden-lg hidden-md hidden-xl">
+			<div  class= "row">
+				<div class= "col-xs-12  togglelinkdivs">
+				<a href= "attractions.html">ATTRACTIONS</a>
+				</div>
+			</div>
+			<div  class= "row">
+				<div class= "col-xs-12  togglelinkdivs">
+				<a href="snackbar.html">SNACKBAR</a>
+				</div>
+			</div>
+			<div  class= "row">
+				<div class= "col-xs-12  togglelinkdivs">
+				<a href="">RESERVATIONS</a>
+				</div>
+			</div>
+			<div  class= "row">
+				<div class= "col-xs-12  togglelinkdivs">
+				<a href="contactus.html">CONTACT US</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="container-fluid " id="marsbackground" data-image-src= "img/MarsDayBreak.jpg" data-parallax="scroll" >
+
+	
+		<div class = "col-xs-12" id= "opening_text">
+			<div id= "text_container">THE COSMIC CAFE</div>
+		</div>
+	</div>
+	
+	<div class= "parallax-window" data-parallax="scroll" data-image-src="">
+	
+	
+	
+	
+	</div>
+	
+	
+	<script type= "text/javascript">
+
+			
+
+			$('#menuIcon').click(function(e){
+					$('#myDIV').toggle();
+					e.stopPropagation();
+			});
+			$(document).click(function(e){
+			    $("#myDIV").hide();
+			});
+
+	setInterval(function() {
+					var navbar = document.getElementById("navbar");
+					var logo = document.getElementById("logocontainer");
+				  if ($(window).scrollTop() > 50) {
+						navbar.style.backgroundColor = "rgba(0, 0, 0, 0.7)";
+						logo.style.height = "70px";
+		   		}
+			 		else {
+						navbar.style.backgroundColor = "rgba(0, 0, 0, 0)";
+						logo.style.height = "200px";
+					}
+		}, 250);
+
+
+
+</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="dependencies/parallax.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.4/SmoothScroll.min.js"></script>
+	<!-- Latest compiled and minified JavaScript (j.query) -->
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
+	<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	
+	
+	</body>
+	
+</html>
+	
+	
+	
+	
+	

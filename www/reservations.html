@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+  <link rel='stylesheet' href='dependencies/fullcalendar-3.1.0/fullcalendar.css' />
+  <link rel='stylesheet' href='dependencies/fullcalendar-scheduler-1.5.0/scheduler.css' />
+  <script src='dependencies/fullcalendar-3.1.0/lib/jquery.min.js'></script>
+  <script src='dependencies/fullcalendar-3.1.0/lib/moment.min.js'></script>
+  <script src='dependencies/fullcalendar-3.1.0/fullcalendar.js'></script>
+  <script src= 'dependencies/fullcalendar-scheduler-1.5.0/scheduler.js'></script>
+  <link rel='stylesheet' href= 'dependencies/jquery-ui-1.12.1.custom/jquery-ui.css' />
+  <!-- THAT FAILED
+          <link rel= 'stylesheet' href= 'dependencies/fullcalendar-master/src/main.css' />
+  -->
+  <script type= "text/javascript">
+
+  $(document).ready(function() {
+
+      // page is now ready, initialize the calendar...
+
+      $('#calendar').fullCalendar({
+          // options and callbacks here
+          theme: true,
+          schedulerLicenseKey: 'CC-Attribution-NonCommercial-NoDerivatives',
+
+          height: 800,
+
+        dayClick: function(date, jsEvent, view) {
+
+                  //alert('Clicked on: ' + date.format());
+
+                 $(this).css('background-color', 'red');
+
+              },
+
+      });
+
+  });
+
+</script>
+
+<style>
+
+
+
+
+
+</style>
+
+</head>
+
+<body>
+
+  <div class="calendar-container">
+
+    <div class="calendar" id='calendar'></div>
+
+  </div>
+
+
+
+
+</body>
+
+
+
+</html>
