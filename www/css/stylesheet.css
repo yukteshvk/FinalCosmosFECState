@@ -395,7 +395,20 @@ h4 {
 	
 }
 
-#attraction_text {
+.attraction_text {
+	padding: 0;
+	line-height: 80vh;
+	text-align: center;
+	height: auto;
+	overflow: hidden;
+	font-family: 'Stellar-light', sans-serif;
+	color: white;
+	font-style: normal;
+	letter-spacing: 15px;
+	font-size: 60px;
+}
+
+.long_attraction_text {
 	padding: 0;
 	line-height: 80vh;
 	text-align: center;
@@ -547,6 +560,144 @@ table.Hours_Table td {
 	color: white;
 }
 
+#Contact_Us_Top{
+	margin-top: 3%;
+	
+}
+
+.form_container {
+	text-align: center;
+	height: 400px;
+}
+
+form {
+	height: 400px;
+}
+
+.first_container{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	float: left; 
+	width: 50%;
+	padding: 10px;
+}
+
+label {
+	display: block;
+	font-size: 13px;
+	font-family: 'Stellar-light', sans-serif;
+	color: black;
+	letter-spacing: 1px;
+}
+
+input.fname {
+	position: relative;
+	border-width: 1px;
+	width: 80%;
+	height: 40px;
+	margin: 0px;
+	border-radius: 3px;
+	background-color: rgb(250, 250, 250);
+	border-color: rgb(204, 204, 204);
+	box-sizing: border-box;
+
+}
+
+.last_container {
+	float: left; 
+	width: 50%; 
+	padding: 10px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+input.lname {
+	position: relative;
+	border-width: 1px;
+	width: 80%;
+	height: 40px;
+	margin: 0px;
+	border-radius: 3px;
+	background-color: rgb(250, 250, 250);
+	border-color: rgb(204, 204, 204);
+	box-sizing: border-box;
+}
+
+.email_container {
+	width: 100%;
+	padding: 10px;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+input.email {
+	position: relative;
+	width: 90%;
+	border-width: 1px;
+	height: 40px;
+	margin: 0px;
+	border-radius: 3px;
+	background-color: rgb(250, 250, 250);
+	border-color: rgb(204, 204, 204);
+	box-sizing: border-box;
+}
+
+.message_container {
+	width: 100%;
+	padding: 10px;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+textarea{
+	position: relative;
+	border-width: 1px;
+	width: 90%;
+	height: 100px;
+	margin: 0px;
+	border-radius: 3px;
+	background-color: rgb(250, 250, 250);
+	border-color: rgb(204, 204, 204);
+	box-sizing: border-box;
+	resize:none;	
+}
+
+.map_container {
+	text-align: center;
+	margin-top: 30px;
+	padding-left: 2.5%;
+	padding-right: 2.5%;
+}
+
+#googleMap {
+	width:90%; 
+	height:380px; 
+	filter: grayscale();	
+}
+
+#Contact_Icons_Container {
+	min-height: 500px;
+	clear: both;
+}
+
+.Contact_Icons {
+	text-align: center;
+	padding-top: 100px;
+	
+}
+
+.Contact_Icons > h3 {
+	
+	font-family: 'Stellar-light', sans-serif;
+	color: #ff6600;
+	font-size: 20px;
+	position: aboslute;
+	bottom: 0;
+	
+}
+
 
 
 @font-face {
@@ -661,6 +812,19 @@ table.Hours_Table td {
 		font-size: 25px;
 	}
 	
+	#googleMap {
+		width: 100%
+	}
+	.map_container {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	
+	.long_attraction_text {
+		
+		font-size: 40px;
+		
+	}
 }
 	
 @media screen and (max-width: 500px) {

@@ -72,7 +72,7 @@
 			</div>
 			<div  class= "row">
 				<div class= "col-xs-12  togglelinkdivs">
-				<a class= "one" href="reservations.html">RESERVATIONS</a>
+				<a class= "one" href="">RESERVATIONS</a>
 				</div>
 			</div>
 			<div  class= "row">
@@ -92,23 +92,122 @@
 	</div>
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	<div id= "About_Us" class= "container col-xs-12">
+		<h1>WE LOVE FEEDBACK</h1>
+	</div>
 
+	
+	
+	
+	
+	<div id="Contact_Us_Top" class= "container col-xs-12" >
+	
+		<div class= "row">
+	
+			<div class= "form_container col-sm-6">
+				
+				
+				<form  action="action_page.php">
+						
+					<div class="first_container" >
+						<label >First Name</label>
+						<input type="text" class="fname" name="firstname">
+					</div>
+					
+					<div class= "last_container"style= >
+						<label>Last Name</label>
+						<input type="text" class="lname" name="lastname">
+					</div>
+					
+					<div class="email_container" >
+						<label>Email</label>
+						<input type="text" class="email" name="firstname">
+					</div>
+					
+					<div class="message_container" >
+						<label>Message</label>
+						<textarea class="message"></textarea>
+					</div>
+				
+				</form>
+	
+			</div>
+	
+			
+			<div class= "map_container col-sm-6">
+			
+				
+				<div id="googleMap" ></div>
+
+			
+			</div>
+	
+	
+		</div>
+
+	
+	</div>
+	
+	<div id= "Contact_Icons_Container" class= "col-xs-12">
+
+
+		<div class= "row">
+
+
+
+			
+
+			<div class = "Contact_Icons col-sm-4" >
+
+
+
+				<img style = "width: 180px;" src="img/ContactPhone.png" alt="lasertag" >
+
+					<h3>(253)-712-8768</h3>
+
+
+
+			</div>
+
+			
+			
+			<div class = "Contact_Icons col-sm-4">
+
+
+
+				<img style = "width: 180px;" src="img/ContactMarker.png" alt="cake" >
+
+				<h3>8726 6th Avenue <br> Tacoma, Washington <br> 98406</h3>
+
+			</div>
+
+			
+			
+
+			<div class = "Contact_Icons col-sm-4">
+
+
+				<img  style = "width: 180px;" src="img/ContactMail.png " alt="bowling" >
+
+				<h3>cosmosfec@gmail.com</h3>
+
+			</div>
+
+			
+
+		
+
+			
+
+
+		</div>
+
+
+
+
+	</div>
+
+	
 	
 	
 	
@@ -137,6 +236,8 @@
 					<div class= "media_icon_container col-xs-3">
 						
 						<a href=""><img src="img/instagram.png" alt="instagram" style= "width: 50px;"></img></a>
+						
+					
 						
 					</div>
 					
@@ -178,15 +279,15 @@
 				</tr>
 				<tr>
 					<td>Friday</td>
-					<td>10am - 10pm</td>
+					<td>10am - 11pm</td>
 				</tr>
 				<tr>
 					<td>Saturday</td>
-					<td>10am - 10pm</td>
+					<td>10am - 12pm</td>
 				</tr>
 				<tr>
 					<td style="border-bottom-style: none;">Sunday</td>
-					<td style="border-bottom-style: none;">10am - 10pm</td>
+					<td style="border-bottom-style: none;">9am - 10pm</td>
 				</tr>
 			</tbody>
 		</table>
@@ -215,11 +316,27 @@
 			    $("#myDIV").hide();
 			});
 
-	
+	function myMap() {
+	  var myCenter = new google.maps.LatLng(47.255339, -122.484789);
+  var mapCanvas = document.getElementById("googleMap");
+  var mapOptions = {center: myCenter, zoom: 9};
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+  var marker = new google.maps.Marker({position:myCenter});
+  marker.setMap(map);
 
+  // Zoom to 9 when clicking on marker
+  google.maps.event.addListener(marker,'click',function() {
+    map.setZoom(11);
+    map.setCenter(marker.getPosition());
+  });
+}
+	
+	
 
 	
 	</script>
+	
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDweY9wmlNzvst9pFu8rCMOTItatw_YYJg&callback=myMap"></script>
 		
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 
