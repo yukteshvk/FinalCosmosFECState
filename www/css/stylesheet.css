@@ -547,6 +547,13 @@ table.Hours_Table td {
 	color: white;
 }
 
+/*  Reservations Styling   */
+
+.calendarContainer {
+	margin-top: 10px;
+}
+
+
 
 
 @font-face {
