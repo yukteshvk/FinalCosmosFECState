@@ -153,14 +153,14 @@ a.one:active {
 	clear: both;
 }
 
-h1 {
+#About_Us > h1 {
 	font-family: 'Stellar-light', sans-serif;
 	color: Black;
 	font-style: normal;
 	font-size: 60px;
 }
 
-h1::after {
+#About_Us > h1::after {
 	display: block;
 	content: '';
 	width: 20%;
@@ -181,6 +181,7 @@ div.example {
 #myCarousel {
 	margin-top: 130px;
 	clear: both;
+	
 }
 
 .carousel-control .icon-next {
@@ -198,11 +199,17 @@ div.example {
 	width: 100%;
 }
 
-#example {
-	clear: both;
-	height: 2000px;
+.carousel-caption {
+    text-align:center;
+	margin-bottom: 10px;
+
 }
 
+.carousel-caption > h1 {
+	font-family: 'Stellar-light', sans-serif;
+	font-size: 2.5vw;
+	color: white;
+}
 #At_Cosmos {
 	margin-top: 20px;
 	min-height: 500px;
@@ -726,7 +733,7 @@ textarea{
 		font-size: 7vw;
 	}
 	
-	h1 {
+	#About_Us > h1 {
 		font-size: 6vw;
 	}
 	
